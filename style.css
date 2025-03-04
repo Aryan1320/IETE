@@ -1,0 +1,353 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #fff; /* Light text for contrast */
+  }
+  
+  /* Container */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Logo Section */
+  .logo img {
+    height: 50px;
+    width: auto;
+  }
+  
+  /* Navigation Menu */
+  .nav-menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-menu li {
+    margin: 0;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-menu a:hover {
+    color: #4CAF50; /* Accent color on hover */
+  }
+  
+  /* Search Bar */
+  .search-bar {
+    position: relative;
+  }
+  
+  .search-input {
+    padding: 8px 12px;
+    border: 1px solid #333;
+    background-color: #222;
+    color: #fff;
+    border-radius: 4px;
+    width: 200px;
+  }
+  
+  .search-input::placeholder {
+    color: #aaa;
+  }
+  
+  /* Social Media Icons */
+  .social-icons {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-icon {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: #333;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    background-color: #4CAF50; /* Accent color on hover */
+  }
+
+  /* Hero Section */
+.hero {
+    background-image: url('images/Background.png'); /* Replace with your hero background image or use a video */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 90vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #fff; /* Light text */
+  }
+  
+  /* Hero Content */
+  .hero-content {
+    max-width: 900px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark overlay to improve text visibility */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  }
+  
+  .hero-title {
+    font-size: 3rem; /* Large title */
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #4CAF50; /* Accent color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .hero-btn:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    transform: translateY(-5px); /* Button hover effect */
+  }
+
+  /* About Us Section */
+.about-us {
+    background-color: #1e1e1e; /* Dark background for About Us section */
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #fff; /* Light color for the title */
+  }
+  
+  /* Section Description */
+  .section-description {
+    font-size: 1.2rem;
+    color: #ccc; /* Slightly lighter text color for the description */
+    margin-bottom: 40px;
+  }
+  
+  /* Stats Section */
+  .stats {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .stat {
+    background-color: #333; /* Dark card background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 150px;
+    text-align: center;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4CAF50; /* Accent color for the numbers */
+    margin-bottom: 10px;
+  }
+  
+  .stat-label {
+    font-size: 1rem;
+    color: #fff; /* Light text color for the labels */
+  }
+  
+  /* About Button */
+  .about-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #4CAF50; /* Accent color */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .about-btn:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    transform: translateY(-5px); /* Button hover effect */
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem; /* Slightly smaller title on mobile */
+    }
+  
+    .section-description {
+      font-size: 1rem; /* Smaller description text on mobile */
+    }
+  
+    .stats {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .stat {
+      width: 100%;
+    }
+  
+    .about-btn {
+      font-size: 1rem; /* Smaller button text on mobile */
+      padding: 12px 24px; /* Smaller button padding */
+    }
+  }
+
+  
+  /* Key Features Section */
+.key-features {
+    background-color: #1e1e1e; /* Dark background for Key Features section */
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Section Title */
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #fff; /* Light color for the title */
+  }
+  
+  /* Features Grid */
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 30px;
+  }
+  
+  /* Feature Card */
+  .feature {
+    background-color: #333; /* Dark background for each feature card */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover effect for Feature Cards */
+  .feature:hover {
+    transform: translateY(-5px); /* Slight upward movement */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Feature Icon */
+  .feature-icon {
+    font-size: 3rem;
+    color: #4CAF50; /* Accent color for icons */
+    margin-bottom: 20px;
+  }
+  
+  /* Feature Title */
+  .feature-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  /* Feature Description */
+  .feature-description {
+    font-size: 1rem;
+    color: #ccc; /* Light text color for description */
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem; /* Slightly smaller title on mobile */
+    }
+  
+    .feature-title {
+      font-size: 1.3rem; /* Smaller title on mobile */
+    }
+  
+    .feature-description {
+      font-size: 0.9rem; /* Smaller description text on mobile */
+    }
+  }
+  
+ 
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-menu ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .search-input {
+      width: 150px;
+      margin-top: 10px;
+    }
+  
+    .social-icons {
+      margin-top: 10px;
+    }
+  }
+
